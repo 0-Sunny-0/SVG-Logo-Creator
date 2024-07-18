@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
+// maxLength will be needed for validation function on character limit. 
 
 const questions = [
     // Question 1 
@@ -11,6 +12,8 @@ const questions = [
         type: "input",
         message: "Please enter up to 3 characters for your logo.",
         name: "3char"
+
+        function validation() {}
     },
     // Question 2
     {
@@ -26,7 +29,7 @@ const questions = [
         choices: [
             "Triangle",
             "Circle",
-            "Square",
+            "Square"
         ]
     },
     // Question 4
@@ -40,7 +43,7 @@ const questions = [
 // TODO: Create a function to write SVG to file
 
 const writeToFile = (fileName, data) => {
-    fs.writeFile(fileName, data (err) => {
+    fs.writeFile(fileName, data, (err) => {
         err ? console.error(err) : console.log('Generated logo.svg!')
     })
 }
