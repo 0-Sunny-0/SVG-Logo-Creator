@@ -2,6 +2,9 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const SVG = require('./lib/svg');
+const { Triangle, Circle, Square } = require('./lib/shapes');
+const { writeFile } = require('fs/promises');
 
 // TODO: Create an array of questions for user input
 // maxLength will be needed for validation function on character limit. 
@@ -56,7 +59,12 @@ function init () {
         .prompt(questions)
         .then((data) => {
             if(data.shape === "Triangle"){
-                writeToFile('logo.svg', 'shape SVG goes here')
+                const svg = new SVG();
+                // console.log('example svg', svg);
+                const shape = new Triangle();
+                // svg.setText(text, textColor);
+                svg.setShape(shape);
+                return writeToFile('logo.svg', svg.render())
             } else if(data.shape === "Circle"){
                 writeToFile('logo.svg', 'shape SVG goes here')
             } else {
