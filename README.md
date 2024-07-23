@@ -2,7 +2,7 @@
 
 ## Description
 
-The SVG logo creator is a command line application that allows you the user to input certain details and have a logo generate of your styling choice. Once the logo is created, it will be saved as an SVG file to use however you'd like.
+The SVG logo creator is a command line application that allows you the user to input text details and have a logo generate of your styling choice. Once the logo is created, it will be saved as an SVG file to use however you'd like.
 
 ## Links
 
@@ -16,7 +16,7 @@ The SVG logo creator is a command line application that allows you the user to i
 
 ## Installation
 
-To install the necessary dependencies for this application, please type "" in your Terminal/Command Line Interface. 
+To install the necessary dependencies for this application, please type "npm i" in your Terminal/Command Line Interface. 
 
 
 ## Usage
@@ -25,7 +25,7 @@ To install the necessary dependencies for this application, please type "" in yo
 
 ## Testing
 
-
+Testing run using Jest.
 
 ## License 
 

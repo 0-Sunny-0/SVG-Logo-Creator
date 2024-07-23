@@ -34,7 +34,7 @@ const questions = [
     },
     // Question 4
     {
-        type: "list",
+        type: "input",
         message: "Please enter in the color of your logo shape.",
         name: "color2"
     }
