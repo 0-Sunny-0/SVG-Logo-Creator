@@ -29,4 +29,4 @@ To install the necessary dependencies for this application, please type "" in yo
 
 ## License 
 
-No license at this time. 
+No license needed for this project at this time. 

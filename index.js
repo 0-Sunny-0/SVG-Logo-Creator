@@ -13,7 +13,7 @@ const questions = [
         message: "Please enter up to 3 characters for your logo.",
         name: "3char"
 
-        function validation() {}
+        // function validation() {}
     },
     // Question 2
     {
@@ -36,7 +36,7 @@ const questions = [
     {
         type: "list",
         message: "Please enter in the color of your logo shape.",
-        name: "color"
+        name: "color2"
     }
 ];
 
@@ -46,17 +46,24 @@ const writeToFile = (fileName, data) => {
     fs.writeFile(fileName, data, (err) => {
         err ? console.error(err) : console.log('Generated logo.svg!')
     })
-}
+};
 
 // TODO: Create a function to initialize app
 
+// Change out 'shape goes here' to actual SVG file that will be saved. 
 function init () {
     inquirer
         .prompt(questions)
         .then((data) => {
-            writeToFile('logo.svg', (data))
+            if(data.shape === "Triangle"){
+                writeToFile('logo.svg', 'shape SVG goes here')
+            } else if(data.shape === "Circle"){
+                writeToFile('logo.svg', 'shape SVG goes here')
+            } else {
+                writeToFile('logo.svg', 'shape SVG goes here')
+            }
         })
-}
+};
 
 // Function call to initialize app
 
