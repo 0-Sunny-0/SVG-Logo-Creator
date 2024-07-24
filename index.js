@@ -14,7 +14,7 @@ const questions = [
     {
         type: "input",
         message: "Please enter up to 3 characters for your logo.",
-        name: "3char"
+        name: "text"
 
         // function validation() {}
     },
@@ -22,7 +22,7 @@ const questions = [
     {
         type: "input",
         message: "Please enter in a color choice for your logo text.",
-        name: "color"
+        name: "textcolor"
     },
     // Question 3
     {
@@ -39,7 +39,7 @@ const questions = [
     {
         type: "input",
         message: "Please enter in the color of your logo shape.",
-        name: "color2"
+        name: "shapecolor"
     }
 ];
 
@@ -58,18 +58,23 @@ function init () {
     inquirer
         .prompt(questions)
         .then((data) => {
-            if(data.shape === "Triangle"){
-                const svg = new SVG();
-                // console.log('example svg', svg);
-                const shape = new Triangle();
-                // svg.setText(text, textColor);
-                svg.setShape(shape);
-                return writeToFile('logo.svg', svg.render())
-            } else if(data.shape === "Circle"){
-                writeToFile('logo.svg', 'shape SVG goes here')
-            } else {
-                writeToFile('logo.svg', 'shape SVG goes here')
-            }
+            const {text, textcolor, shape, shapecolor} = data 
+            console.log(data);
+            const svg = new SVG();
+            let shapeInstance;
+            if(shape === "Triangle"){
+                shapeInstance = new Triangle();
+               
+            } else if(shape === "Circle"){
+                shapeInstance = new Circle();
+                
+            } else if (shape === "Square"){
+                shapeInstance = new Square();
+            } 
+            shapeInstance.setColor(shapecolor);
+            svg.setText(text, textcolor);
+            svg.setShape(shapeInstance);
+            return writeToFile('logo.svg', svg.render());
         })
 };
 
