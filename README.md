@@ -7,7 +7,7 @@ The SVG logo creator is a command line application that allows you the user to i
 ## Links
 
 <a href="https://github.com/0-Sunny-0/SVG-Logo-Creator">Github Repo</a><br>
-<a href="">Recorded Video</a>
+<a href="https://drive.google.com/file/d/1yWBT-lukNifbIFKLvyhAC3gl8_mWzd3R/view?usp=drive_link">Recorded Video</a>
 
 ## Visuals
 
