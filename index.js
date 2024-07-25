@@ -48,7 +48,7 @@ const questions = [
 const writeToFile = (fileName, data) => {
     fs.writeFile(fileName, data, (err) => {
         err ? console.error(err) : console.log('Generated logo.svg!')
-    })
+   })
 };
 
 // TODO: Create a function to initialize app

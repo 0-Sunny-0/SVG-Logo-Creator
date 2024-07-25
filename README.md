@@ -11,8 +11,9 @@ The SVG logo creator is a command line application that allows you the user to i
 
 ## Visuals
 
-<img src=""><br>
-<img src="">
+<img src="./examples/YUM Circle - almost there.png"><br>
+<img src="./examples/ZXE Triangle - Better.png"><br>
+<img src="./examples/DED Square - Better.png">
 
 ## Installation
 
@@ -21,7 +22,7 @@ To install the necessary dependencies for this application, please type "npm i" 
 
 ## Usage
 
-
+To run the application, a user will enter 'node index.js' in the Terminal/Command Line Interface. 
 
 ## Testing
 
