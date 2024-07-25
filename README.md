@@ -13,7 +13,7 @@ The SVG logo creator is a command line application that allows you the user to i
 
 <img src="./examples/YUM Circle - almost there.png"><br>
 <img src="./examples/ZXE Triangle - Better.png"><br>
-<img src="./examples/DED Square - Better.png">
+<img src="./examples/DED Square - Little-more-Better.png">
 
 ## Installation
 
